@@ -5888,6 +5888,13 @@ run these steps:
     </div>
 
    <li>
+    <p>If <var>httpRequest</var>'s <a for=request>url</a> is a <a>potentially trustworthy URL</a>
+    and the user agent has a signal, either from the user directly or the operating system, that
+    the user prefers that the server not respond with content that is designated as objectionable,
+    according to the server's definition of the concept, append (`<code>Prefer</code>`,
+    `<code>safe</code>`) to <var>httpRequest</var>'s <a for=request>header list</a>.
+
+   <li>
     <p>Modify <var>httpRequest</var>'s <a for=request>header list</a> per HTTP. Do not
     <a for="header list">append</a> a given <a>header</a> if <var>httpRequest</var>'s
     <a for=request>header list</a> <a for="header list">contains</a> that <a>header</a>'s
